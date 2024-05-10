@@ -42,7 +42,7 @@ async function generate(path) {
   const promsies = [
     writeFile(join(_path, `${name}.tsx`), createTsx(name)),
     writeFile(join(_path, `${name}.styles.ts`), createStylesTs()),
-    writeFile(join(_path, 'index.ts'), createIndex(name)),
+    writeFile(join(_path, 'index.ts'), createIndex(name))
   ]
 
   await Promise.all(promsies)

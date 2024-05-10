@@ -23,21 +23,21 @@ export default defineConfig(({ mode }) => {
       svgr(),
       eslint({
         eslintOptions: {
-          cacheLocation: joinPath('node_modules/.eslintcache'),
-        },
+          cacheLocation: joinPath('node_modules/.eslintcache')
+        }
       }),
       createHtmlPlugin({
-        minify: true,
-      }),
+        minify: true
+      })
     ],
     resolve: {
       alias: {
-        '@': joinPath('src'),
-      },
+        '@': joinPath('src')
+      }
     },
     server: {
       port: +env.VITE_PORT,
-      open: handleBooleanEnv(env.VITE_OPEN),
-    },
+      open: handleBooleanEnv(env.VITE_OPEN)
+    }
   }
 })
