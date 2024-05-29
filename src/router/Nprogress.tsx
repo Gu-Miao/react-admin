@@ -1,12 +1,16 @@
 import { useEffect } from 'react'
 import nprogress from 'accessible-nprogress'
+import 'accessible-nprogress/dist/accessible-nprogress.min.css'
+
+nprogress.configure({ showSpinner: false })
 
 function Nprogress() {
-  // @ts-ignore
   useEffect(() => {
     nprogress.start()
 
-    return () => nprogress.done()
+    return () => {
+      nprogress.done()
+    }
   })
   return null
 }
