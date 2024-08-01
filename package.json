@@ -13,8 +13,10 @@
   "dependencies": {
     "@primer/octicons-react": "^19.11.0",
     "@reduxjs/toolkit": "^2.2.7",
+    "accessible-nprogress": "^2.1.2",
     "antd": "^5.19.4",
     "axios": "^1.7.2",
+    "husky": "^9.1.4",
     "localforage": "^1.10.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
