@@ -1,6 +1,5 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
-import { reportWebVitals } from '@/utils/reportWebVitals'
 import App from '@/App'
 import '@/index.less'
 
@@ -12,5 +11,3 @@ root.render(
     <App />
   </React.StrictMode>
 )
-
-reportWebVitals(console.log)
