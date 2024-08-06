@@ -1,7 +1,9 @@
 import { Typography } from 'antd'
-const { Title, Text } = Typography
 import NotFound from '@/assets/images/not-found.svg?react'
+
 import './Error.less'
+
+const { Title, Text } = Typography
 
 function Error() {
   return (

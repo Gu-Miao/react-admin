@@ -6,9 +6,10 @@
     "prepare": "husky",
     "start": "vite",
     "build": "tsc && vite build",
+    "preview": "vite preview",
     "lint": "eslint . --max-warnings=0",
     "fix": "eslint . --fix",
-    "preview": "vite preview"
+    "gen": "node scripts/generate.mjs"
   },
   "dependencies": {
     "@primer/octicons-react": "^19.11.0",
@@ -47,6 +48,5 @@
     "vite": "^5.3.5",
     "vite-plugin-html": "^3.2.2",
     "vite-plugin-svgr": "^4.2.0"
-  },
-  "packageManager": "pnpm@9.4.0+sha256.b6fd0bfda555e7e584ad7e56b30c68b01d5a04f9ee93989f4b93ca8473c49c74"
+  }
 }
